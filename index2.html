@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FuadOS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Boot screen -->
+  <div id="boot-screen">
+    <div class="boot-text">Booting FuadOS...</div>
+    <div class="progress-container">
+      <div class="progress-bar"></div>
+    </div>
+  </div>
+
+  <!-- Binary background canvas -->
+  <canvas id="binary-bg"></canvas>
+
+  <!-- Desktop -->
+  <div id="desktop">
+    <h1 class="hero-title">FuadOS</h1>
+    <div class="icon" data-window="projects">
+      <img src="https://img.icons8.com/fluency/96/folder-invoices.png" alt="Projects">
+      <p>Projects</p>
+    </div>
+    <div class="icon" data-window="resume">
+      <img src="https://img.icons8.com/?size=100&id=46171&format=png&color=40C057" alt="Resume">
+      <p>Resume</p>
+    </div>
+    <div class="icon" data-window="about">
+      <img src="https://img.icons8.com/?size=100&id=dldlq1BjBZHv&format=png&color=40C057" alt="About">
+      <p>About Me</p>
+    </div>
+    <div class="icon" data-window="contact">
+      <img src="https://img.icons8.com/?size=100&id=3Cfptde5Kaaw&format=png&color=40C057" alt="Contact">
+      <p>Contact</p>
+    </div>
+  </div>
+
+  <!-- Windows -->
+  <div class="window" id="projects">
+    <div class="window-header">
+      <span>Projects</span>
+      <button class="close">X</button>
+    </div>
+    <div class="window-content">
+      <ul>
+        <li>Drone Surveillance – ESP32-CAM + obstacle detection.</li>
+        <li>Note Sharing Website – PHP + Firebase auth.</li>
+        <li>PenTesting Toolkit – Custom scripts & automation.</li>
+        <li>ALU Design – 4-bit ALU in digital techniques.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="window" id="resume">
+    <div class="window-header">
+      <span>Resume</span>
+      <button class="close">X</button>
+    </div>
+    <div class="window-content">
+      <p>ECE Student | Pentester | Web Dev | Hardware Projects</p>
+      <a href="#">Download Resume</a>
+    </div>
+  </div>
+
+  <div class="window" id="about">
+    <div class="window-header">
+      <span>About Me</span>
+      <button class="close">X</button>
+    </div>
+    <div class="window-content">
+      <p>Hello! I’m Fuad. I love building projects in security, drones, and web dev. I explore both professional and hacker sides of tech.</p>
+    </div>
+  </div>
+
+  <div class="window" id="contact">
+    <div class="window-header">
+      <span>Contact</span>
+      <button class="close">X</button>
+    </div>
+    <div class="window-content">
+      <p>Email: yourname@email.com</p>
+      <p>GitHub: <a href="github.com/yourprofile">github.com/yourprofile</a></p>
+      <p>LinkedIn: <a href="linkedin.com/in/yourprofile">linkedin.com/in/yourprofile</a></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
